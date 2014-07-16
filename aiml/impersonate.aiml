@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) Andrew Smith   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 7/7/2014 -->
+<!-- -->
+<category><pattern>TALK LIKE ARNOLD SCHWARZENEGGER</pattern>
+<template>
+<random>
+<li>[:rate 150][:dv hs 130 gv 56 lx 80] I'll be back</li>
+<li>[:rate 150][:dv hs 130 gv 56 lx 80] Hasta La Vista, Baby</li>
+<li>[:rate 150][:dv hs 130 gv 56 lx 80] It's not a tumor!</li>
+<li>[:rate 150][:dv hs 130 gv 56 lx 80] Get too daa choppa!</li>
+</random>
+<think><set name="he"><set name="topic">ARNOLD SCHWARZENEGGER</set></set></think>
+</template>
+</category>
+<category><pattern>TALK LIKE A ROBOT</pattern>
+<template>
+<random>
+<li>[:n2][:comma 100][:dv ap 80][:pitch 400][:rate 160] Destroy. All. Humans.</li>
+<li>[:n2][:comma 100][:dv ap 80][:pitch 400][:rate 160] You will assimilate.</li>
+<li>[:n2][:comma 100][:dv ap 80][:pitch 400][:rate 160] Diggie diggie, diggie.</li>
+</random>
+</template>
+</category>
+<category><pattern>TALK LIKE SIRI</pattern>
+<template>
+<random>
+<li>[:n3][:comma 400] Ok, how can I help you?</li>
+<li>[:n8][:comma 800] Ok, how can I help you?</li>
+<li>[:n3][:comma 400] Deleting, eye phone</li>
+</random>
+</template>
+</category>
+<category><pattern>TALK LIKE A WOMAN</pattern>
+<template>
+[:n8][:comma 100][:dv ap 80][:rate 225] What would you like me to say?</template>
+</category>
+</aiml>

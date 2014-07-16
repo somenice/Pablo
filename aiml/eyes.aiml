@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) Andrew Smith   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 7/7/2014 -->
+<!-- -->
+<category><pattern>BLINK</pattern>
+<template>
+<random>
+<li>[:rgb020000] Red</li>
+<li>[:rgb000200] Green</li>
+<li>[:rgb000002] Blue</li>
+</random>
+<think><set name="topic">EYES</set></think>
+</template>
+</category>
+<category><pattern>CLOSE YOUR EYES</pattern>
+<template>
+[:rgb000000]
+<think><set name="topic">EYES</set></think>
+</template>
+</category>
+<category><pattern>RED EYES</pattern>
+<template>
+[:rgb220000]
+</template>
+</category>
+<category><pattern>GREEN EYES</pattern>
+<template>
+[:rgb002200]
+</template>
+</category>
+<category><pattern>BLUE EYES</pattern>
+<template>
+[:rgb000022]
+</template>
+</category>
+<category><pattern>ORANGE EYES</pattern>
+<template>
+[:rgb221100]
+</template>
+</category>
+</aiml>
